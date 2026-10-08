@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bản đồ tương tác – Cộng đồng ASEAN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+ <div class="mapwrap">
+  <svg id="map" viewBox="0 0 1000 800" role="img" aria-label="Bản đồ Đông Nam Á"></svg>
+  <div class="ctl"><button id="zi" title="Phóng to">+</button><button id="zo" title="Thu nhỏ">−</button><button id="zr" title="Đặt lại">⟲</button></div>
+  <div class="lay">
+   <label><input type="checkbox" id="l1" checked>Sự kiện ★</label>
+   <label><input type="checkbox" id="l2" checked>Thủ đô</label>
+  </div>
+ </div>
+ <aside class="side">
+  <h1>Cộng đồng ASEAN: từ ý tưởng đến hiện thực</h1>
+  <p class="sub">Bấm vào quốc gia, ★ sự kiện hoặc quần đảo trên bản đồ. Kéo để di chuyển, cuộn chuột / chụm tay để phóng to.</p>
+  <div class="tl" id="tl"></div>
+  <div id="info"></div>
+ </aside>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
